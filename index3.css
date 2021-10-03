@@ -52,6 +52,12 @@ section {
     display: none;
   }
   .header-container {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
     padding-top: 0;
   }
 }
@@ -90,9 +96,15 @@ h2 {
     font-size: 50px;
   }
   #welcome {
-    padding-bottom: 53px;
+    padding-bottom: 60px;
   }
 }
+@media (max-width: 1025px) {
+  #welcome {
+    padding-bottom: 55px;
+  }
+}
+
 .navigation {
   max-width: 780px;
 
@@ -176,6 +188,9 @@ a:active {
     padding-top: 5%;
     padding-bottom: 13.5%;
   }
+  .welcome-legend {
+    padding-top: 5px;
+  }
 }
 #legend {
   padding: 27px 0 75px 0;
@@ -194,6 +209,10 @@ a:active {
   }
 }
 @media (max-width: 769px) {
+  #welcome {
+    padding-bottom: 0px;
+  }
+
   h2 {
     font-size: 40px;
     padding: 0;
@@ -294,7 +313,7 @@ a:active {
 }
 @media (max-width: 421px) {
   .welcome-legend {
-    top: 14%;
+    top: 9.5%;
   }
 
   .section-title {
@@ -976,6 +995,9 @@ input#slider::-ms-tooltip {
     width: 100%;
     font-size: 28px;
   }
+  #second-tickets-control {
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 800px) {
   .tickets-container_img {
@@ -1194,8 +1216,8 @@ input[type="radio"]:checked ~ label {
   .contacts-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 75px;
-    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 75px;
     font-weight: bolder;
   }
   .contacts-container span {
@@ -1219,7 +1241,7 @@ input[type="radio"]:checked ~ label {
     padding-bottom: 30px;
   }
   .tickets-container {
-    height: 96vh;
+    height: 65vh;
   }
   .img-bound {
     width: 100%;
@@ -1236,6 +1258,7 @@ input[type="radio"]:checked ~ label {
   }
   .contacts-container {
     padding-top: 60px;
+    padding-bottom: 70px;
     flex-direction: column;
   }
   #map {
