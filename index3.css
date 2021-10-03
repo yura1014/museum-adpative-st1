@@ -4,8 +4,8 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  /* border: 1px solid #f00; */
 }
-
 html {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
@@ -67,7 +67,7 @@ section {
 
 #welcome {
   padding-top: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .logo,
 .section-title {
@@ -94,7 +94,7 @@ h2 {
   }
 }
 .navigation {
-  max-width: 790px;
+  max-width: 780px;
 
   width: 100%;
   font-size: 22px;
@@ -178,7 +178,7 @@ a:active {
   }
 }
 #legend {
-  padding: 30px 0 70px 0;
+  padding: 27px 0 75px 0;
   letter-spacing: 2px;
 }
 
@@ -255,7 +255,7 @@ a:active {
 @media (max-width: 1025px) {
   /*add* there can be a problem*/
   .large-font {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   #legend {
@@ -280,7 +280,10 @@ a:active {
   }
 
   .main-text {
-    font-size: 18px;
+    font-size: 22px;
+  }
+  body {
+    font-size: 16px;
   }
   .large-font {
     font-size: 20px;
@@ -375,6 +378,14 @@ hr {
 @media (max-width: 769px) {
   .card-container {
     gap: 50px 20px;
+    padding: 75px 30px 100px 30px;
+    justify-content: space-between;
+  }
+  .card-container hr {
+    width: 54%;
+  }
+  .card-container .main-text {
+    font-size: 18px;
   }
   section {
     padding-top: 40px;
@@ -383,13 +394,16 @@ hr {
 
 .explore-container {
   display: flex;
-  justify-content: space-between;
+
   align-items: flex-start;
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .explore {
   padding-bottom: 50px;
+}
+.text-pad-right {
+  padding-right: 20px;
 }
 .explore-gap {
   padding-top: 100px;
@@ -399,11 +413,11 @@ hr {
 } */
 .pic-container {
   height: 73.5vw;
-  margin: 1vw auto;
+  margin: 1vw 0;
   height: 700px;
-  width: 720px;
+
   overflow: hidden;
-  width: 98vw;
+  width: 50%;
 }
 .pic-container figure {
   background-image: url(assets/img/explore_slider/after.jpg);
@@ -425,7 +439,7 @@ hr {
   min-width: 0.6%;
   overflow: visible;
   position: absolute;
-  width: 60%;
+  width: 61%;
   animation: first 2s 1 normal ease-in-out 0.1s;
   -webkit-animation: first 2s 1 normal ease-in-out 0.1s;
 }
@@ -521,32 +535,41 @@ input#slider::-ms-tooltip {
     width: 50%;
   }
 }
+.bounds {
+  width: 660px;
+}
 @media (max-width: 1025px) {
   .text-hide {
     display: none;
   }
   .explore {
-    padding-bottom: 30px;
+    padding-bottom: 45px;
   }
   .explore-container {
     flex-wrap: wrap;
   }
   .explore-gap {
-    padding-top: 80px;
+    padding-top: 78px;
   }
   .explore-gap p {
     padding-bottom: 5px;
   }
+  .delimiter .main-text {
+    padding-top: 5px;
+  }
   .explore-gap .main-text {
     letter-spacing: normal;
-    line-height: 35px;
+    line-height: 40px;
   }
   .pic-container {
-    padding-top: 40px;
+    padding-top: 42px;
     width: 710px;
     height: 740px;
+    margin: 1vw auto;
   }
-
+  .bounds {
+    width: 970px;
+  }
   .card-container_tours_img {
     /*add*/
     width: 330px;
@@ -555,6 +578,13 @@ input#slider::-ms-tooltip {
 .explore span {
   color: #caaa7d;
   /* padding: 75px; */
+}
+.explore .main-text {
+  padding-bottom: 8px;
+  line-height: 33px;
+}
+.delimiter {
+  padding-top: 5px;
 }
 .explore .title::after {
   width: 90%;
@@ -579,8 +609,14 @@ input#slider::-ms-tooltip {
     font-size: 28px;
     letter-spacing: 2px;
   }
+  .delimiter {
+    padding-top: 0;
+  }
 }
 @media (max-width: 769px) {
+  .explore-container {
+    padding-bottom: 0;
+  }
   #visiting {
     padding: 30px 0 0 0;
     height: 1225px;
@@ -600,7 +636,8 @@ input#slider::-ms-tooltip {
   }
 }
 @media (max-width: 640px) {
-  .card-container {
+  .explore .title::after {
+    width: 90vw;
   }
   #visiting {
     height: 220vh;
@@ -617,7 +654,8 @@ input#slider::-ms-tooltip {
     letter-spacing: 5px;
   }
   .card-container {
-    align-content: space-around;
+    justify-content: center;
+    align-content: space-between;
 
     padding: 55px 0 0 0;
     height: 2130px;
@@ -640,7 +678,7 @@ input#slider::-ms-tooltip {
     background-position: center;
   }
   .explore {
-    padding-bottom: 20px;
+    padding-bottom: 35px;
   }
 }
 .title::after {
@@ -655,7 +693,7 @@ input#slider::-ms-tooltip {
 .video-title-container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 80px;
+  padding-bottom: 75px;
   overflow: hidden;
 }
 .video-section .title::after {
@@ -675,7 +713,7 @@ input#slider::-ms-tooltip {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 60px 0 65px 0;
+  padding: 75px 0 75px 0;
   text-align: justify;
   width: 100%;
 }
@@ -685,12 +723,16 @@ input#slider::-ms-tooltip {
     padding-bottom: 30px;
   }
   .video-preview {
-    padding-top: 35px;
+    padding-top: 55px;
+    padding-bottom: 60px;
   }
   .video-preview img {
     width: 300px;
   }
   #video {
+  }
+  .title::after {
+    bottom: -20px;
   }
 }
 @media (max-width: 769px) {
@@ -698,7 +740,7 @@ input#slider::-ms-tooltip {
     padding-bottom: 7px;
   }
   .video-preview {
-    padding-top: 10px;
+    padding-top: 35px;
   }
   .video-preview img {
     width: 350px;
@@ -713,6 +755,7 @@ input#slider::-ms-tooltip {
   }
   .video-preview img {
     width: 180px;
+    padding-top: 5px;
   }
   .video-slider {
     padding-bottom: 25px;
@@ -734,6 +777,7 @@ input#slider::-ms-tooltip {
 .gallery img {
   display: block; /*убираем нижний отступ под картинкой*/
   width: 100%; /*растягиваем изображение на всю ширину блока-контейнера*/
+  /* padding-bottom: 15px; */
 }
 .gallery-header-padding {
   padding-top: 50px;
@@ -771,19 +815,40 @@ input#slider::-ms-tooltip {
   gap: 0 0px;
 }
 .picture-inner-container img {
-  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .column1 {
-  padding-top: 90px;
+  padding-top: 110px;
 }
 .column2 {
-  padding: 50px 40px 0 40px;
+  padding: 70px 40px 0 40px;
 }
 .column3 {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 #tickets {
   padding-bottom: 70px;
+}
+@media (max-width: 1025px) {
+  .column2 {
+    padding: 50px 40px 0 40px;
+  }
+  #tickets {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 769px) {
+  .picture-inner-container img {
+    padding-bottom: 35px;
+  }
+  .column1 {
+    padding-top: 80px;
+    padding-left: 0;
+  }
+  .column2 {
+    padding-top: 30px;
+    padding-right: 0;
+  }
 }
 @media (max-width: 700px) {
   .picture-container {
@@ -791,11 +856,14 @@ input#slider::-ms-tooltip {
   }
 }
 @media (max-width: 421px) {
+  .picture-inner-container img {
+    padding-bottom: 25px;
+  }
   .column1 {
-    padding-top: 70px;
+    padding-top: 90px;
   }
   .column2 {
-    padding: 25px 30px 0 25px;
+    padding: 40px 0px 0 25px;
   }
   .picture-container {
     height: 675px;
@@ -889,10 +957,24 @@ input#slider::-ms-tooltip {
   }
   .ticket-options {
     justify-content: flex-end;
-    padding-right: 23px;
+    padding-right: 25px;
   }
   .amount-controls {
     width: 100%;
+  }
+  .total-price .text-block {
+    width: 100%;
+  }
+  .total-price {
+    padding-top: 0;
+    width: 100%;
+    text-align: justify;
+    font-size: 28px;
+    width: 100%;
+  }
+  .ticket-amount .large-font {
+    width: 100%;
+    font-size: 28px;
   }
 }
 @media (max-width: 800px) {
@@ -901,7 +983,7 @@ input#slider::-ms-tooltip {
     height: 340px;
   }
   .tickets-container {
-    padding-top: 50px;
+    padding-top: 60px;
     height: 480px;
   }
   .tickets-container .large-font {
@@ -909,6 +991,13 @@ input#slider::-ms-tooltip {
   }
   .ticket-options {
     padding-right: 50px;
+    height: 430px;
+  }
+  .total-price {
+    padding-bottom: 20px;
+  }
+  #second-tickets-control {
+    margin-bottom: 25px;
   }
 }
 .amount-controls button {
@@ -1052,6 +1141,7 @@ input[type="radio"]:checked ~ label {
     width: 100%;
   }
 }
+
 .paralax {
   background: url("assets/img/parallax.jpg");
   background-position: center;
@@ -1065,26 +1155,41 @@ input[type="radio"]:checked ~ label {
     height: 300px;
   }
   #tickets {
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 421px) {
+  .total-price {
+    padding-top: 5px;
+    padding-bottom: 25px;
   }
 }
 .contacts-container {
   display: flex;
   justify-content: space-between;
   padding-top: 105px;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   font-weight: bolder;
 }
 #contacts {
   padding-bottom: 0;
 }
+.contacts-container .main-text {
+  padding-top: 55px;
+}
 #map {
   /* max-width: calc(66%); */
-  max-width: 960px; /*изменила ширину*/
+  max-width: 960px; /*изменил ширину*/
 }
 @media (max-width: 1025px) {
   #contacts {
-    padding-top: 45px;
+    padding-top: 53px;
+  }
+  #buy {
+    font-weight: 100;
+    font-size: 22px;
+    letter-spacing: 4px;
   }
   .contacts-container {
     display: flex;
@@ -1093,13 +1198,38 @@ input[type="radio"]:checked ~ label {
     padding-bottom: 70px;
     font-weight: bolder;
   }
+  .contacts-container span {
+    line-height: 30px;
+  }
   .contacts-container .main-text {
-    padding-top: 30px;
+    padding-top: 25px;
   }
   #map {
-    max-width: calc(67vw);
+    max-width: 67vw;
   }
 }
+@media (max-width: 421px) {
+  #buy {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  #tickets {
+    padding-top: 43px;
+    padding-bottom: 30px;
+  }
+  .tickets-container {
+    height: 96vh;
+  }
+  .img-bound {
+    width: 100%;
+    height: 200px;
+  }
+  .ticket-amount {
+    height: 380px;
+  }
+}
+
 @media (max-width: 800px) {
   #contacts {
     padding-top: 35px;
@@ -1111,6 +1241,13 @@ input[type="radio"]:checked ~ label {
   #map {
     padding-top: 35px;
     max-width: 100%;
+  }
+  .contacts-container .main-text {
+    font-size: 18px;
+    padding-top: 35px;
+  }
+  .contacts-container span {
+    line-height: 1;
   }
 }
 @media (max-width: 700px) {
@@ -1124,17 +1261,21 @@ input[type="radio"]:checked ~ label {
     padding-top: 37px;
   }
 }
+@media (max-width: 421px) {
+  .contacts-container {
+    padding-bottom: 30px;
+  }
+}
 .footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 80px 0px;
+  padding: 80px 0px 45px 0;
   align-items: flex-start;
-  height: 260px;
 }
 @media (max-width: 1025px) {
   .footer-content {
-    padding: 50px 0px;
+    padding: 45px 0px 55px 0;
   }
 }
 .nav-menu {
@@ -1186,19 +1327,14 @@ footer .navigation ul {
     font-size: 18px;
   }
   .footer-menu {
-    height: 120px;
+    height: 140px;
   }
 }
 footer .logo {
   letter-spacing: 5px;
 }
-@media (max-width: 1000px) {
-  footer .large-font {
-    font-size: 28px;
-  }
-}
 footer .main-text {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: 100;
 }
 .social-icons {
@@ -1224,6 +1360,22 @@ footer .main-text {
     brightness(75%) contrast(82%);
   transition: all 0.3s ease-out;
 }
+
+@media (max-width: 1025px) {
+  footer .large-font {
+    font-size: 28px;
+  }
+  .social-content {
+    height: 120px;
+  }
+  .social-icons {
+    padding: 100px 0 0 0;
+  }
+  .social-icons li {
+    padding-right: 3px;
+  }
+}
+
 @media (max-width: 1000px) {
   .social-icons {
     display: flex;
@@ -1245,6 +1397,18 @@ footer hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 769px) {
+  .footer-menu {
+    padding-top: 15px;
+    height: 120px;
+  }
+  .social-icons li {
+    padding-left: 18px;
+  }
+  .myfooter {
+    padding-top: 25px;
+  }
 }
 @media (max-width: 700px) {
   .footer-content {
@@ -1289,6 +1453,21 @@ footer hr {
   }
   .myfooter {
     padding-top: 35px;
+  }
+}
+@media (max-width: 421px) {
+  .footer-content {
+    padding-top: 35px;
+    height: 295px;
+    padding-bottom: 50px;
+  }
+
+  .social-icons img {
+    border: none;
+    padding-left: 0;
+    padding-right: 5px;
+    width: 48px;
+    height: 48px;
   }
 }
 /* модальное окно */
@@ -1866,6 +2045,11 @@ input[type="date"]::-webkit-outer-spin-button {
 
 @media (max-width: 600px) {
   .hide-600 {
+    display: none;
+  }
+}
+@media (max-width: 410px) {
+  .hide-410 {
     display: none;
   }
 }

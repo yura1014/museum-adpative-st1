@@ -19,7 +19,7 @@ button {
 }
 .video-onscreen-play {
   position: absolute;
-  top: 45%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -28,8 +28,7 @@ button {
 }
 
 .video-onscreen-play svg {
-  width: 70%;
-  height: 70%;
+  width: 12vw;
 }
 .video-onscreen-play svg path {
   transition: all 0.3s ease-in-out;
@@ -105,6 +104,10 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 250px;
+}
+.video-sound svg {
+  width: 38px;
+  height: 30px;
 }
 .progress {
   background: linear-gradient(
@@ -235,12 +238,54 @@ label {
 #overlay.o {
   display: none;
 } */
+.toggle-play svg {
+  width: 30px;
+  height: 30px;
+}
+.fullscreen-button svg {
+  width: 30px;
+  height: 30px;
+}
+.video-mute-volume svg {
+  width: 30px;
+  height: 30px;
+}
+@media (max-width: 769px) {
+  #video-ruller {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+  }
+}
 @media (max-width: 421px) {
+  .video-onscreen-play {
+    top: 40%;
+  }
   .video-onscreen-play svg {
     width: 23%;
     height: 23%;
   }
   .player-controls {
-    height: 5%;
+    height: 3%;
+    padding: 20px 18px 12px 15px;
+    justify-content: space-between;
+  }
+
+  .progress.volume {
+    height: 5px;
+    width: 195px;
+  }
+  .video-sound svg {
+    height: 15px;
+  }
+  .fullscreen-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .toggle-play svg {
+    width: 15px;
+    height: 15px;
   }
 }

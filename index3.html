@@ -97,7 +97,7 @@
                 <h3>royal palace</h3>
                 <hr />
                 <p class="main-text">360&deg; virtual tour</p>
-                <p>google street view panorama</p>
+                <p>Google street view panorama</p>
               </a>
               <a href="tours/tour3.html" target="blank">
                 <img
@@ -108,7 +108,7 @@
                 <h3>denon wing</h3>
                 <hr />
                 <p class="main-text">360&deg; virtual tour</p>
-                <p>google street view panorama</p>
+                <p>Google street view panorama</p>
               </a>
 
               <a href="tours/tour4.html" target="blank">
@@ -120,7 +120,7 @@
                 <h3>colonnade perrault</h3>
                 <hr />
                 <p class="main-text">360&deg; virtual tour</p>
-                <p>google street view panorama</p>
+                <p>Google street view panorama</p>
               </a>
               <a href="tours/tour5.html" target="blank">
                 <img
@@ -131,7 +131,7 @@
                 <h3>greek hall</h3>
                 <hr />
                 <p class="main-text">360&deg; virtual tour</p>
-                <p>google street view panorama</p>
+                <p>Google street view panorama</p>
               </a>
               <a href="tours/tour6.html" target="blank">
                 <img
@@ -142,7 +142,7 @@
                 <h3>mona lisa</h3>
                 <hr />
                 <p class="main-text">360&deg; virtual tour</p>
-                <p>google street view panorama</p>
+                <p>Google street view panorama</p>
               </a>
               <a href="tours/tour7.html" target="blank">
                 <img
@@ -153,7 +153,7 @@
                 <h3>night palace</h3>
                 <hr />
                 <p class="main-text">360&deg; virtual tour</p>
-                <p>google street view panorama</p>
+                <p>Google street view panorama</p>
               </a>
             </div>
           </div>
@@ -165,20 +165,22 @@
                 <h2 class="section-title title">picture explore</h2>
 
                 <div class="explore-gap hide-768">
-                  <p class="main-text">
-                    Las Meninas is a 1656 painting by Diego Velázquez, the
-                    leading artist of the Spanish Golden Age.
-                  </p>
-                  <p class="main-text">
-                    It was cleaned in 1984 to remove a
-                    <span>"yellow veil"</span> of dust that had gathered since
-                    the previous restoration in the 19th century.
-                  </p>
-                  <p class="main-text text-hide">
-                    The cleaning provoked furious protests, not because the
-                    picture had been damaged in any way, but because it looked
-                    different.
-                  </p>
+                  <div class="bounds">
+                    <div class="main-text">
+                      Las Meninas is a 1656 painting by Diego Velázquez, the
+                      leading artist of the Spanish Golden Age.
+                      <div class="delimiter main-text">
+                        It was cleaned in 1984 to remove a
+                        <span>"yellow veil"</span> of dust that had gathered
+                        since the previous restoration in the 19th century.
+                      </div>
+                    </div>
+                    <p class="main-text text-hide">
+                      The cleaning provoked furious protests, not because the
+                      picture had <br />been damaged in any way, but because it
+                      looked different.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="pic-container">
@@ -206,7 +208,7 @@
           <div class="container">
             <div class="video-title-container">
               <h2 class="title section-title bronze">Video journey</h2>
-              <p class="main-text text-hide">
+              <p class="main-text text-hide text-pad-right">
                 Enter and visit one of the most famous museums in the world and
                 enjoy<br />
                 masterpieces such as Mona Lisa or Hammurabi's Code
@@ -266,8 +268,6 @@
                     </button> -->
                     <button class="player-btn toggle-play" title="Toggle Play">
                       <svg
-                        width="30"
-                        height="30"
                         viewBox="0 0 30 30"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -304,12 +304,11 @@
                     max="100"
                     step="1"
                     class="progress"
+                    id="video-ruller"
                   />
                   <div class="video-sound">
                     <button type="button" class="video-mute-volume">
                       <svg
-                        width="38"
-                        height="30"
                         viewBox="0 0 38 30"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -343,8 +342,6 @@
                   </div>
                   <button type="button" class="fullscreen-button">
                     <svg
-                      width="36"
-                      height="36"
                       viewBox="0 0 36 36"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +384,7 @@
             <div class="picture-container gradient">
               <div class="picture-inner-container">
                 <div class="column1"></div>
-                <div class="column2"></div>
+                <div class="column2 hide-410"></div>
                 <div class="column3 hide-768"></div>
                 <!-- <img src="assets/img/gallery/galery1.jpg" alt="art image" />
                 <img src="assets/img/gallery/galery2.jpg" alt="art image" />
@@ -481,7 +478,7 @@
                   <div class="text-block">
                     <p class="main-text">Senior 65+</p>
                   </div>
-                  <div class="amount-controls">
+                  <div class="amount-controls" id="second-tickets-control">
                     <button
                       class="numb-button"
                       type="button"
@@ -505,10 +502,10 @@
                       +
                     </button>
                   </div>
-                  <div class="total-price text-block">
-                    <p class="large-font"><span>Total &#8364;220</span></p>
+                  <div class="total-price text-block large-font">
+                    Total &#8364; 220
                   </div>
-                  <a href="#win1" class="main-text" id="buy">Buy now</a>
+                  <a href="#win1" class="main-text" id="buy">Buy Now</a>
                   <!-- Модальное окно №1 -->
                   <a href="#x" class="overlay" id="win1"></a>
                   <div class="popup container">
@@ -740,8 +737,8 @@
             <div class="footer-menu flex-row">
               <ul>
                 <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#visiting">Visiting</a></li>
-                <li><a href="#video explore">Video</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#video">Video</a></li>
               </ul>
               <ul>
                 <li><a href="#gallery">Gallery</a></li>
